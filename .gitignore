@@ -1,0 +1,11 @@
+.DS_Store
+.AppleDouble
+.LSOverride
+__MACOSX/
+._*
+/data
+/outputs
+data_collection_v0.ipynb
+kalshi_worldcup_ida.ipynb
+kalshi-key.key
+Kalshi_WorldCup_Data_Collection.ipynb
