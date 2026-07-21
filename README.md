@@ -59,4 +59,16 @@ The **outcome is encoded in the ticker suffix**: e.g. `KXWCGAME-…-ARG` (Argent
 | `attendance` / `venue` | Match context |
 | `scorers` | Goal scorers (best-effort; may be empty) |
 
+*Team-strength inputs (added by Cell 7):*
+
+| Column | Meaning |
+|---|---|
+| `home_elo` / `away_elo` | World Football **Elo** rating of each side |
+| `elo_diff` | `home_elo − away_elo` (the pairwise strength gap Δ) |
+| `home_fifa_points` / `away_fifa_points` | Official **FIFA** ranking points |
+| `fifa_diff` | `home_fifa_points − away_fifa_points` |
+
+ 
+- The related tables `team_ratings.csv` (Elo + FIFA per team), `elo_ratings.csv`, and `fifa_ranking.csv` come from the collection notebook's Cell 7. The loaders here also read `fifa_ranking.csv` directly and canonicalize team codes (e.g. `USMNT → USA`).
+
 ---
